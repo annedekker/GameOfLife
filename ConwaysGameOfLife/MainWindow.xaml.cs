@@ -58,7 +58,7 @@ namespace ConwaysGameOfLife
             liveCellColorButton.Background = liveCellColor;
             deadCellColorButton.Background = deadCellColor;
             backgroundColorButton.Background = backgroundColor;
-            gridLineColorButton.Background = gridLineColor;
+            //gridLineColorButton.Background = gridLineColor;
 
             ColorRSlider.Value = Colors.Aqua.R;
             ColorGSlider.Value = Colors.Aqua.G;
@@ -403,14 +403,18 @@ namespace ConwaysGameOfLife
             try
             {
                 drawDeadCells = (drawDeadCellBox.IsChecked == true);
-                drawGridLines = (drawGridLinesBox.IsChecked == true);
+                //drawGridLines = (drawGridLinesBox.IsChecked == true);
             }
             catch (NullReferenceException) { return; }
 
             DrawLifeField();
 
-            deadCellColorButton.IsEnabled = drawDeadCells;
-            gridLineColorButton.IsEnabled = drawGridLines;
+            try
+            {
+                deadCellColorButton.IsEnabled = drawDeadCells;
+                //gridLineColorButton.IsEnabled = drawGridLines;
+            }
+            catch (NullReferenceException) { return; }
         }
 
         private void DrawBackground_Checked(object sender, EventArgs e)
@@ -498,7 +502,7 @@ namespace ConwaysGameOfLife
                     break;
                 case "grid":
                     gridLineColor = new SolidColorBrush(newcolor);
-                    gridLineColorButton.Background = gridLineColor;
+                    //gridLineColorButton.Background = gridLineColor;
                     break;
             }
 

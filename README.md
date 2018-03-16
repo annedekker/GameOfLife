@@ -5,6 +5,7 @@ Current Version: 0.1
 To Do:
 - Get an icon
 - Add functionality for grid lines (or remove the option from the drawing menu)
+- Add more patterns
 
 Version 0.1:
 - Added information on mouse position when it is moved across the field in the left label

@@ -6,6 +6,8 @@ To Do:
 - Get an icon
 - Add functionality for grid lines
 - Add more patterns
+- Decrease cap on random generation size to ~300x300
+- Generation info label shows dead cell count when using a random field??
 
 Version 0.1:
 - Added information on mouse position when it is moved across the field in the left label

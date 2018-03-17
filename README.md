@@ -6,7 +6,7 @@ To Do:
 - Get an icon
 - Add functionality for grid lines
 - Add more patterns
-- Decrease cap on random generation size to ~300x300
+- Increase maximum field resolution
 - Generation info label shows dead cell count when using a random field??
 
 Version 0.1:

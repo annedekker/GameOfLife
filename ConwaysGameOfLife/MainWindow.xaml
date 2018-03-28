@@ -31,7 +31,10 @@
                 <local:VisualHost x:Name="fieldVisuals"/>
             </Canvas>
 
-            <StackPanel Name="drawingPanel" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,32,0" Width="220" Visibility="Visible">
+            <StackPanel Name="drawingPanel" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,32,0" Width="220" Visibility="Collapsed">
+                <StackPanel.Background>
+                    <SolidColorBrush Color="#222222" Opacity="0.7"/>
+                </StackPanel.Background>
                 <!-- Selector & On/Off -->
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -94,7 +97,7 @@
                 <!-- Random Generation Size -->
                 <StackPanel>
                     <Label Name="randomSizeLabel" Content="Random Generation Size [0 x 0]" Foreground="#cccccc" HorizontalContentAlignment="Center"/>
-                    <Slider Name="randomSizeSlider" Minimum="1" Maximum="299" IsSnapToTickEnabled="True" ValueChanged="RandomSizeSlider_Changed" Value="1"/>
+                    <Slider Name="randomSizeSlider" Minimum="1" Maximum="120" IsSnapToTickEnabled="True" ValueChanged="RandomSizeSlider_Changed" Value="1"/>
                 </StackPanel>
                 <!-- Auto-Play Speed -->
                 <StackPanel>

@@ -95,6 +95,7 @@ namespace ConwaysGameOfLife
 
             liveCells = nextGen;
             deadCells.ExceptWith(liveCells);
+            generation++;
         }
 
         private HashSet<XY> GetDeadNeighbours(XY cell)

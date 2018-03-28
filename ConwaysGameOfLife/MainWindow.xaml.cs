@@ -558,7 +558,7 @@ namespace ConwaysGameOfLife
             {
                 infoLabelRight.Content = "Alive : " + lifeGame.LiveCells.Count.ToString() +
                 "   Dead : " + lifeGame.DeadCells.Count.ToString() +
-                "   Generation : " + lifeGame.DeadCells.Count.ToString();
+                "   Generation : " + lifeGame.Generation.ToString();
             }
             catch (NullReferenceException) { return; }
         }

@@ -8,6 +8,7 @@ To Do:
 - Add more patterns
 - Increase maximum field resolution
 - Generation info label shows dead cell count when using a random field??
+- Fix color chooser background color
 
 Version 0.1:
 - Added information on mouse position when it is moved across the field in the left label
